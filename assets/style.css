@@ -1,0 +1,77 @@
+*, 
+::before, 
+::after{
+  box-sizing: border-box;
+}
+html{
+font-size: 16px;
+}
+body{
+margin: 0;
+}
+a{
+text-decoration: none;
+color: #000000;
+}
+.header {
+}
+.container {
+}
+.header-menu {
+  display: flex;
+  
+}
+.header-menu__logo {
+}
+.header-logo {
+}
+.header-logo__image {
+}
+.header-menu__navbar {
+  display: flex;
+  flex-direction: column;
+}
+.header-navbar__list {
+  list-style: none;
+}
+.header-navbar__item {
+}
+.header-navbar__link {
+  display: block;
+}
+.header-menu__actions {
+}
+.btn {
+}
+.btn--light {
+}
+.btn--accent {
+}
+.header-content {
+}
+.header-content__title {
+}
+.header-content__description {
+}
+.header-content__actions {
+}
+.header-content__notes {
+}
+.header-content__picture {
+}
+.header-content__image {
+}
+.main {
+}
+.brands {
+}
+.brands__title {
+}
+.brands__list {
+}
+.brand-item {
+}
+.brand-item__logo {
+}
+.brans-item {
+}
