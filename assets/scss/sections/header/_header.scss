@@ -1,0 +1,13 @@
+.header {
+  background-color: $color-white;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  @include sm {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+

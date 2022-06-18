@@ -1,13 +1,16 @@
-@use "presets" as *;
-@use "common";
+@import "../../node_modules/normalize.css/normalize";
+@import "presets/skins";
+@import "presets/variables";
+@import "mixins";
 
-body {
-  background-color: $color-primary;
-  color: $color-accent;
-}
+@import "common/fonts";
+@import "common/typography";
+@import "common/classes";
 
-div {
-  width: $ul;
-  padding-left: $gap;
-  padding-right: $gap;
-}
+@import "sections/header/header";
+@import "sections/header/header-menu";
+@import "sections/header/header-navbar";
+@import "sections/header/header-content";
+
+@import "sections/main";
+

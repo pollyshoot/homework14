@@ -1,0 +1,81 @@
+.header-content {
+  display: grid;
+  align-items: center;
+  flex-grow: 1;
+  padding-top: 160px;
+  padding-bottom: 160px;
+
+  @include xl-min {
+    grid-template-columns: 580px 1fr;
+    grid-template-areas: "ttl img" "dsc img" "act img" "nts img";
+  }
+
+  @include xl-lg {
+    grid-template-columns: 50% 1fr;
+    grid-template-areas: "ttl img" "dsc img" "act img" "nts img";
+  }
+  @include lg {
+    grid-template-columns: 1fr;
+    grid-template-areas: "ttl" "dsc" "img" "act" "nts";
+  }
+  &__title {
+    grid-area: ttl;
+    font-weight: 600;
+    line-height: 1.08;
+    margin: 0;
+
+    @include xl-min {
+      font-size: 65px;
+    }
+
+    @include xl-lg {
+      font-size: 50px;
+    }
+    @include lg {
+      font-size: 40px;
+      text-align: center;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+  }
+  &__description {
+    grid-area: dsc;
+    line-height: 1.4;
+    margin-bottom: $gap;
+    padding-right: 70px;
+    @include xl-min {
+      font-size: 25px;
+    }
+    @include xl {
+      font-size: 20px;
+    }
+  }
+
+  &__actions {
+    grid-area: act;
+    display: flex;
+    column-gap: $gap-sm;
+  }
+
+  &__btn {
+    min-width: 160px;
+  }
+
+  &__picture {
+    grid-area: img;
+    display: flex;
+    align-items: center;
+  }
+
+  &__image {
+    @include lg-min {
+      width: 100%;
+    }
+    @include lg {
+      width: 50%;
+    }
+  }
+  &__notes {
+    grid-area: nts;
+  }
+}

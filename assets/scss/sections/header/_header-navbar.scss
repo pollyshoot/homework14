@@ -1,0 +1,36 @@
+.header-navbar {
+
+  @include xl-min {
+    column-gap: $gap;
+  }
+
+
+  @include lg-min {
+    flex-grow: 1;
+    display: flex;
+  }
+
+  @include lg {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: rgba($color-white, 0.97);
+    left: 0;
+    right: 0;
+    text-align: center;
+    box-shadow: 0 5px 5px rgba($color-black, 0.25);
+  }
+
+  &__item {
+    
+    display: block;
+    
+    @include xl-min {
+      padding: 0.5em $gap;
+    }
+
+    @include xl {
+      padding: 0.5em 0.75em;
+    }
+  }
+}
