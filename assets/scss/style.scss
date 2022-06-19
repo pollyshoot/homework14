@@ -1,16 +1,14 @@
-@import "../../node_modules/normalize.css/normalize";
-@import "presets/skins";
-@import "presets/variables";
-@import "mixins";
+@use "../../node_modules/normalize.css/normalize";
 
-@import "common/fonts";
-@import "common/typography";
-@import "common/classes";
+@use "mixins/mixins-media";
 
-@import "sections/header/header";
-@import "sections/header/header-menu";
-@import "sections/header/header-navbar";
-@import "sections/header/header-content";
+@use "common/fonts";
+@use "common/typography";
+@use "common/classes";
 
-@import "sections/main";
+@use "sections/header/header";
+@use "sections/header/header-menu";
+@use "sections/header/header-navbar";
+@use "sections/header/header-content";
 
+@use "sections/main";

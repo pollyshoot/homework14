@@ -1,70 +1,100 @@
+@use "../../presets" as *;
+@use "../../mixins/" as *;
+
 .header-content {
   display: grid;
-  align-items: center;
-  flex-grow: 1;
-  padding-top: 160px;
-  padding-bottom: 160px;
 
+  grid-template-areas: "ttl img" "dsc img" "act img" "nts img";
   @include xl-min {
-    grid-template-columns: 580px 1fr;
-    grid-template-areas: "ttl img" "dsc img" "act img" "nts img";
-  }
+    padding-top: 160px;
+    padding-bottom: 160px;
 
+    grid-template-columns: 580px 1fr;
+  }
+  @include xl-sm {
+    /*ПОД БОЛЬШИМ ВОПРOСОМ*/
+    padding-top: 180px;
+    padding-bottom: 60px;
+  }
   @include xl-lg {
     grid-template-columns: 50% 1fr;
-    grid-template-areas: "ttl img" "dsc img" "act img" "nts img";
   }
   @include lg {
-    grid-template-columns: 1fr;
     grid-template-areas: "ttl" "dsc" "img" "act" "nts";
+    grid-template-columns: 1fr;
   }
+  @include sm {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  row-gap: $gap;
   &__title {
-    grid-area: ttl;
-    font-weight: 600;
-    line-height: 1.08;
     margin: 0;
 
+    font-weight: 600;
+    line-height: 1.08;
+
+    grid-area: ttl;
     @include xl-min {
       font-size: 65px;
     }
-
     @include xl-lg {
       font-size: 50px;
     }
     @include lg {
-      font-size: 40px;
-      text-align: center;
-      padding-left: 50px;
       padding-right: 50px;
+      padding-left: 50px;
+
+      text-align: center;
+
+      font-size: 40px;
     }
   }
   &__description {
-    grid-area: dsc;
-    line-height: 1.4;
     margin-bottom: $gap;
-    padding-right: 70px;
+
+    line-height: 1.4;
+
+    grid-area: dsc;
     @include xl-min {
       font-size: 25px;
     }
     @include xl {
       font-size: 20px;
     }
+    @include lg-min {
+      padding-right: 70px;
+    }
+    @include lg {
+      text-align: center;
+    }
   }
 
   &__actions {
-    grid-area: act;
     display: flex;
+
     column-gap: $gap-sm;
+    grid-area: act;
+    @include lg {
+      justify-content: center;
+    }
   }
 
   &__btn {
-    min-width: 160px;
+    @include sm-min {
+      min-width: 160px;
+    }
+    @include sm {
+      min-width: 120px;
+    }
   }
 
   &__picture {
-    grid-area: img;
     display: flex;
     align-items: center;
+    justify-content: center;
+
+    grid-area: img;
   }
 
   &__image {
@@ -77,5 +107,8 @@
   }
   &__notes {
     grid-area: nts;
+    @include lg {
+      text-align: center;
+    }
   }
 }

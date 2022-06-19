@@ -1,4 +1,8 @@
-.main{
+@use "../presets" as *;
+@use "../mixins/" as *;
+
+.main {
   min-width: 200px;
+
   background-color: $color-bg-accent;
 }

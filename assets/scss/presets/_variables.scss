@@ -1,8 +1,9 @@
+@use "sass:math";
 $xxl: 1380px;
 $xl: 1200px;
 $lg: 992px;
 $md: 786px;
 $sm: 675px;
 $gap: 20px;
-$gap-sm: calc(#{$gap} / 2);
-$gap-lg: calc(#{$gap} * 1.5);
+$gap-sm: math.div($gap, 2);
+$gap-lg: $gap * 1.5;
