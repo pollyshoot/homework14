@@ -28,27 +28,11 @@
     padding-bottom: 60px;
   }
   row-gap: $gap;
+
   &__title {
     margin: 0;
-
-    font-weight: 600;
-    line-height: 1.08;
-
     grid-area: ttl;
-    @include xl-min {
-      font-size: 65px;
-    }
-    @include xl-lg {
-      font-size: 50px;
-    }
-    @include lg {
-      padding-right: 50px;
-      padding-left: 50px;
-
-      text-align: center;
-
-      font-size: 40px;
-    }
+ 
   }
   &__description {
     margin-bottom: $gap;
