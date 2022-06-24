@@ -1,43 +1,108 @@
 @use "../../presets/" as *;
 @use "../../mixins/" as *;
 
-
 .footer-container {
-  background-color: red;
   display: flex;
   gap: 20px;
-  flex-grow: 3;
-  min-width: 1380px;
+  justify-content: center;
+  padding-bottom: 100px;
+  max-width: $ul;
+  margin: 0 auto;
+  padding-right: $gap;
+  padding-left: $gap;
+
+  @include xl {
+    flex-direction: column;
+  }
 }
 
 .footer {
-  background-color: $color-grey;
+  background-color: #eeeeee;
   margin-top: -42px;
   padding-top: 50px;
   padding-bottom: 40px;
-  display: flex;
-  flex-direction: row;
-  
 
-&-menu {
-  display: flex;
-  flex-direction: column;
-  gap: $gap;
-  flex-grow: 1;
-
-  &__picture {
-    order: -1;
-  }
- 
-}
-
-&-navbar {
- 
-
-  &__item {
+  &-menu {
     display: flex;
     flex-direction: column;
-    column-gap: 10px;
+    align-items: center;
+    justify-content: center;
+    gap: $gap;
+
+    padding-right: 100px;
+
+    &__title {
+      font-weight: 600;
+      font-size: 40px;
+      line-height: 50px;
+    }
+
+    &__picture {
+      padding-bottom: 25px;
+    }
+
+    &__logo {
+      padding-bottom: 10px;
+    }
+
+    &__description {
+      font-size: 20px;
+      line-height: 1.5;
+      max-width: fit-content;
+      padding-bottom: 15px;
+    }
+
+    &__action {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 1.5;
+    }
+  }
+
+  &-navbar {
+    display: flex;
+    gap: 30px;
+    padding-top: 30px;
+    justify-content: center;
+
+    &__title {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 25px;
+    }
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      column-gap: 15px;
+      min-width: 200px;
+    }
+    &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      line-height: 15px;
+    }
   }
 }
+
+.footer-rights-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 40px;
+  border-top: 1px solid;
+}
+
+.footer-rights__description {
+  font-size: 12px;
+  line-height: 15px;
+  max-width: 300px;
+}
+
+.footer-rights-info {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
 }
