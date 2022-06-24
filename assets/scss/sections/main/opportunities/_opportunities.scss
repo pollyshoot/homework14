@@ -1,0 +1,35 @@
+@use "../../../presets/" as *;
+@use "../../../mixins/" as *;
+
+.opportunities {
+background-color: $color-bg-light;
+padding: 120px 0;
+
+&__title {
+  margin: 0 0 80px;
+}
+
+&__content {
+display: grid;
+
+
+
+
+@include xl-min {
+  padding: 0 40px;
+  gap: 110px;
+}
+
+@include xl {
+  gap: $gap * 2;
+}
+
+@include lg-min {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@include lg-sm {
+  grid-template-columns: repeat(2, 1fr);
+}
+}
+}

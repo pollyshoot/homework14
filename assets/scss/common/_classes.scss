@@ -1,8 +1,11 @@
 @use "../presets" as *;
 @use "../mixins/" as *;
 
+a {
+  display: block;
+}
 .container {
-  max-width: $xxl;
+  max-width: $ul;
   margin: 0 auto;
   padding-right: $gap;
   padding-left: $gap;
@@ -10,10 +13,8 @@
 
 .btn {
   display: block;
-
   min-width: 120px;
   padding: 0.5em 1em;
-
   border-width: 1px;
   border-style: solid;
   border-radius: 0;
@@ -28,4 +29,30 @@
   color: $color-white;
   border-color: $color-accent;
   background-color: $color-accent;
+}
+
+.btn--dark {
+  color: $color-white;
+  border-color: $color-black;
+  background-color: $color-black;
+}
+
+.btn--sm {
+  @include lg-min {
+    min-width: 120px;
+    min-height: 45px;
+  }
+  @include lg {
+    min-width: 100px;
+    min-height: 40px;
+  }
+}
+  .btn--md {
+min-width: 160px;
+min-height: 45px;
+  }
+
+u {
+  text-decoration: none;
+border-bottom: 1px solid;
 }

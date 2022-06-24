@@ -1,0 +1,22 @@
+@use "../../../presets/" as *;
+@use "../../../mixins/" as *;
+
+.opportunity-item {
+  display: flex;
+  gap: $gap-lg;
+  flex-direction: column;
+  text-align: center;
+  font-size: 18px;
+
+&__title {
+margin: 0;
+}
+
+&__description {
+  margin: 0;
+}
+
+  &__picture {
+    order: -1;
+  }
+}

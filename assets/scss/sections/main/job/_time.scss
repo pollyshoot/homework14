@@ -1,0 +1,30 @@
+@use "../../../presets/" as *;
+@use "../../../mixins/" as *;
+
+.time {
+  @extend %job-article;
+  flex-direction: row-reverse;
+
+  &__content {
+    @extend %job-content;
+  }
+  &__title {
+    @extend %job-title;
+  }
+
+  &__description {
+    @extend %job-description;
+  }
+
+  &__picture {
+    @extend %job-picture;
+  }
+
+  &__image {
+  @extend %job-image;
+  }
+
+  &__btn {
+    @extend %job-btn;
+  }
+}

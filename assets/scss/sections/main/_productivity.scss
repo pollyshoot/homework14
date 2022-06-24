@@ -1,0 +1,64 @@
+@use "../../presets/" as *;
+@use "../../mixins/" as *;
+
+.productivity {
+  &__title {
+    text-align: center;
+    padding-top: 50px;
+  }
+
+  &-content {
+    display: grid;
+    justify-items: center;
+    align-items: baseline;
+    gap: 30px;
+
+    @include xl-min {
+      grid-template-columns: 1fr 1fr 1fr;
+      padding-top: 20px;
+    }
+
+    @include xl {
+      gap: $gap * 2;
+    }
+
+    @include lg {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+.productivity-item {
+  display: flex;
+  gap: $gap-lg;
+  flex-direction: column;
+  text-align: center;
+  flex-wrap: wrap;
+  max-width: 410px;
+  font-size: 20px;
+  padding-bottom: 190px;
+
+  @include xl {
+    padding-bottom: 50px;
+  }
+  &__title {
+    margin: 0;
+  }
+
+  &__description {
+    margin: 0;
+
+    @include xl {
+      font-size: 20px;
+    }
+  }
+
+  &__picture {
+    order: -1;
+    margin-top: 15px;
+  }
+
+//   &__link {
+//     border-bottom: solid 1px #000000;
+//   }
+ }

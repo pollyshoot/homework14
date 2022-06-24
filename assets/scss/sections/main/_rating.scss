@@ -1,0 +1,79 @@
+@use "../../presets/" as *;
+@use "../../mixins/" as *;
+
+.rating {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background-color: $color-bg-neutral;
+
+  &-container {
+    display: flex;
+    gap: $gap;
+
+    @include xl {
+      flex-direction: column;
+    }
+  }
+
+  &-header {
+    display: flex;
+    gap: $gap;
+
+    @include xl {
+      flex-direction: column;
+      gap: 70px;
+      justify-content: center;
+      align-items: center;
+      border-bottom: 1px solid;
+    }
+
+    &__title {
+      padding-left: 50px;
+      padding-right: 20px;
+      text-align: left;
+      font-size: 35px;
+
+      @include xl {
+        text-align: center;
+      }
+    }
+    &__image {
+      order: -1;
+    }
+  }
+
+  &-logo2 {
+    @include sm {
+      padding-left: 20px;
+    }
+  }
+}
+
+.rating-logo {
+  padding-left: 50px;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  margin-right: 100px;
+
+  @include xl-min {
+    border-left: 1px solid;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @include xl {
+    padding-top: 20px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 100px;
+  }
+
+  @include sm {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+}

@@ -62,6 +62,7 @@ $diff: 0.2px;
   }
 }
 
+
 @mixin xl {
   @media (max-width: ($xl - $diff)) {
     @content;

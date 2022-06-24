@@ -13,5 +13,23 @@
 
 
 
-@use "sections/main";
-@use "sections/brands";
+@use "sections/main/main";
+@use "sections/main/brands";
+@use "sections/main/job/control";
+@use "sections/main/job/time";
+@use "sections/main/job/quality";
+@use "sections/main/job/work";
+
+@use "sections/main/opportunities/opportunities";
+@use "sections/main/opportunities/opportunity-item";
+
+@use "sections/main/productivity";
+
+@use "sections/main/comment";
+
+
+@use "sections/main/rating";
+@use "sections/main/integrate";
+@use "sections/main/trial";
+
+@use "sections/footer/footer";

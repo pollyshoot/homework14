@@ -1,1 +1,72 @@
 @use "..//presets/" as *;
+@use "mixins-media" as *;
+@use "mixins" as *;
+
+%job-article {
+  margin-top: 100px;
+  margin-bottom: 125px;
+  display: flex;
+  gap: $gap;
+  
+  @include lg-min {
+    align-items: center;
+  }
+  @include lg {
+    flex-direction: column;
+  }
+
+  @include lg-md {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+%job-title {
+  margin: 0;
+  font-weight: 600;
+  line-height: 1.2;
+
+@include xl-min {
+  font-size: 50px;
+}
+@include xl-lg {
+  font-size: 40px;
+}
+@include lg {
+  font-size: 30px;
+}
+}
+
+%job-content {
+  flex-grow: 1;
+  flex-basis: 200px;
+
+  @include ul-min {
+    padding-right: 160px;
+  }
+
+  @include ul-xl {
+    padding-right: 60px;
+  }
+}
+
+%job-description {
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+%job-picture {
+  flex-grow: 1;
+  flex-basis: 200px;
+}
+
+%job-image {
+  width: 100%;
+}
+
+%job-btn {
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
