@@ -37,6 +37,20 @@
   }
 
   &__button {
-    padding: 15px 30px;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 60px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    
+    @include md {
+      line-height: 50px;
+      padding-left: 10px;
+      padding-right: 10px;
+      
+    }
   }
 }
