@@ -5,6 +5,7 @@
 .brands {
 
   background-color: $color-bg-accent;
+
 @include xl-min {
   padding-top: 125px;
   padding-bottom: 125px; 
@@ -18,7 +19,6 @@
   padding-bottom: 80px;
 }
   &__title {
-
 
 margin: 0 0 40px;
 
