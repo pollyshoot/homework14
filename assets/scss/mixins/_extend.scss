@@ -10,6 +10,7 @@
   
   @include lg-min {
     align-items: center;
+
   }
   @include lg {
     flex-direction: column;
@@ -19,6 +20,11 @@
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  @include sm {
+    margin-bottom: 40px;
+    margin-top: 60px;
   }
 }
 

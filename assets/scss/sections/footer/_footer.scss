@@ -14,13 +14,28 @@
     padding-bottom: 50px;
     padding-left: 40px;
     padding-right: 40px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      margin-left: 40px;
+      margin-right: 40px;
+
+      content: "";
+
+      background-color: black;
+    }
 
     @include xl-min {
-    justify-content: space-between;
-  }
+      justify-content: space-between;
+    }
     @include xl {
       flex-direction: column;
-     gap: 40px;
+      gap: 40px;
       justify-content: center;
     }
 
@@ -32,13 +47,41 @@
       justify-content: center;
       align-items: center;
     }
+
+    &__menu {
+      display: flex;
+      justify-content: center;
+      gap: $gap;
+    }
+
+    &__navbar {
+      display: grid;
+      padding-top: 30px;
+      gap: 25px;
+
+      @include xl-min {
+        gap: 20px;
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      @include xl {
+        gap: 5px;
+        grid-template-columns: repeat(4, 1fr);
+      }
+      @include sm {
+        gap: 5px;
+        grid-template-columns: repeat(2, 1fr);
+        padding-top: 10px;
+      }
+
+      @include xs {
+        gap: 5px;
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
   }
 
-  &-menu {
-    display: flex;
-    justify-content: center;
-    gap: $gap;
-
+  &-menubar {
     @include xl {
       text-align: center;
     }
@@ -51,6 +94,10 @@
 
     &__picture {
       padding-bottom: 25px;
+    }
+
+    &__image {
+      width: 100%;
     }
 
     &__logo {
@@ -72,31 +119,6 @@
   }
 
   &-navbar {
-    display: grid;
-    padding-top: 30px;
-    gap: 25px;
-
-    @include xl-min {
-      gap: 20px;
-      grid-template-columns: repeat(4, 1fr);
-    }
-
-    @include xl {
-      gap: 5px;
-      grid-template-columns: repeat(4, 1fr);
-    }
-    @include sm {
-      gap: 5px;
-      grid-template-columns: repeat(2, 1fr);
-      padding-top: 10px;
-    }
-
-    @include xs {
-      gap: 5px;
-      grid-template-columns: repeat(1, 1fr);
-      
-    }
-
     &__item {
       display: flex;
       flex-direction: column;
@@ -104,11 +126,10 @@
       max-width: 170px;
       font-size: 15px;
       line-height: 15px;
-
-      @include xs {
-        
-      }
     }
+  }
+
+  &-nav {
     &__title {
       font-weight: 600;
       font-size: 20px;
@@ -116,31 +137,60 @@
     }
 
     &__link {
-      padding-top: 10px;
       padding-bottom: 10px;
     }
   }
 }
 
-.footer-rights-container {
+.rights-container {
+  position: relative;
+
   padding-left: 40px;
   padding-right: 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 40px;
-  border-top: 1px solid;
+
+
+  @include xs {
+    flex-direction: column;
+    padding-top: 20px;
+    align-items: center;
+    text-align: center;
+  }
 }
 
-.footer-rights__description {
+.rights-info__description {
   font-size: 12px;
   line-height: 15px;
   max-width: 300px;
+
+  @include xs {
+    max-width: 200px;
+  }
 }
 
-.footer-rights-info {
+.rights-info {
+
   display: flex;
   gap: 20px;
   align-items: center;
   justify-content: center;
+
+  @include xs {
+    flex-direction: column;
+    padding-top: 20px;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.copyright-info {
+
+  &__description {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+
 }

@@ -188,8 +188,8 @@
     <section class="productivity">
       <div class="container">
         <h2 class="productivity__title">Boost your localization team’s productivity tenfold</h2>
-        <div class="productivity-content">
-          <div class="productivity-item">
+        <div class="productivity__content">
+          <div class="productivity__content-item productivity-item">
             <h3 class="productivity-item__title">Managers</h3>
             <p class="productivity-item__description">Update existing and launch new features and products while
               simultaneously localizing them in multiple languages. Streamline your team's workflow, maximize
@@ -200,7 +200,7 @@
             </div>
           </div>
 
-          <div class="productivity-item">
+          <div class="productivity__content-item productivity-item">
             <h3 class="productivity-item__title">Developers</h3>
             <p class="productivity-item__description">Set up an integration with your code repository or your own custom
               SDK via Lokalise's <u>powerful API</u>. Do that once, and every time you make changes in the code, they'll
@@ -212,7 +212,7 @@
             </div>
           </div>
 
-          <div class="productivity-item">
+          <div class="productivity__content-item productivity-item">
             <h3 class="productivity-item__title">Translators</h3>
             <p class="productivity-item__description">Eliminate double-work and neverending revisions with visual
               context (screenshots) and live previews. Improve the quality and speed of your translations with built-in
@@ -228,8 +228,8 @@
 
     <section class="comment">
       <div class="container">
-        <div class="comment-container">
-          <div class="comment-content">
+        <div class="comment__container">
+          <div class="comment__container-content comment-content">
             <div class="comment-content__description">“Lokalise has turned a task we were dreading into an absolute
               pleasure. Great platform, intuitive UX, powerful API. The automatic text recognition for screenshots has
               been a lifesaver, and over-the-air updates are the icing on the cake.”</div>
@@ -245,12 +245,12 @@
 
     <section class="rating">
       <div class="container">
-        <div class="rating-container">
-          <div class="rating-header">
+        <div class="rating__container">
+          <div class="rating__container-header rating-header">
             <h2 class="rating-header__title">The most-loved translation management software</h2>
             <div class="rating-header__image"><img src="assets/images/rating1.png" alt=""></div>
           </div>
-          <div class="rating-logo">
+          <div class="rating__container-logo rating-logo">
             <div class="rating-logo1">
               <a href=""><img src="assets/images/rating2.svg" alt=""></a>
             </div>
@@ -264,12 +264,13 @@
 
     <section class="integrate">
       <div class="container">
-        <div class="integrate-content">
-          <h2 class="integrate__title">Integrate Lokalise with your work tools</h2>
-          <div class="integrate__description">Automate processes, eliminate routine tasks, and track progress with ease.
+        <div class="integrate__content">
+          <h2 class="integrate__content-title">Integrate Lokalise with your work tools</h2>
+          <div class="integrate__content-description">Automate processes, eliminate routine tasks, and track progress with ease.
           </div>
-          <div class="integrate__picture"><img class="integrate__image" src="assets/images/integrate.png" alt=""></div>
-          <div class="integrate__action"><button class="integrate__button btn--accent" type="button">See all integrations</button>
+          <div class="integrate__content-picture"><img class="integrate__content-image" src="assets/images/integrate.png" alt=""></div>
+          <div class="integrate__content-action"><button class="integrate__content-button btn--accent" type="button">See all
+              integrations</button>
           </div>
         </div>
       </div>
@@ -277,11 +278,11 @@
 
     <section class="trial">
       <div class="container">
-        <div class="trial-content">
-          <h2 class="trial__title">Localization made easy. Why wait?</h2>
-          <p class="trial__description">Try for free or let us show you how it works.</p>
-          <div class="trial__action">
-            <button class="btn trial__button btn--dark" type="button">Try it free</button>
+        <div class="trial__content">
+          <h2 class="trial__content-title">Localization made easy. Why wait?</h2>
+          <p class="trial__content-description">Try for free or let us show you how it works.</p>
+          <div class="trial__content-action">
+            <button class="btn trial__content-button btn--dark" type="button">Try it free</button>
           </div>
         </div>
       </div>
@@ -291,87 +292,89 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-container">
-        <div class="footer-menu">
-          <div class="footer-menu__content">
-            <h3 class="footer-menu__title">Case Studies</h3>
-            <div class="footer-menu__picture">
-              <img class="footer-menu__image" src="assets/images/footer.svg" alt="">
+        <div class="footer-container__menu footer-menu">
+          <div class="footer-menu__content footer-menubar">
+            <h3 class="footer-menubar__title">Case Studies</h3>
+            <div class="footer-menubar__picture">
+              <img class="footer-menubar__image" src="assets/images/footer.svg" alt="">
             </div>
-            <div class="footer-menu__logo">
+            <div class="footer-menubar__logo">
               <img src="assets/images/specializedmin.svg" alt="">
             </div>
-            <div class="footer-menu__description">Riding towards global success with a 100% teammate enthusiasm</div>
-            <div class="footer-menu__action"><a class="footer-menu__link" href="">Read more</a></div>
+            <div class="footer-menubar__description">Riding towards global success with a 100% teammate enthusiasm</div>
+            <div class="footer-menubar__action"><a class="footer-menubar__link" href="">Read more</a></div>
           </div>
         </div>
 
-        <div class="footer-navbar">
-          <div class="footer-navbar__item">
-            <h3 class="footer-navbar__title">Product</h3>
-            <div class="footer-navbar__list">
-              <a class="footer-navbar__link" href="">For developers</a>
-              <a class="footer-navbar__link" href="">For managers</a>
-              <a class="footer-navbar__link" href="">For translators</a>
-              <a class="footer-navbar__link" href="">For designers</a>
-              <a class="footer-navbar__link" href="">Integrations</a>
-              <a class="footer-navbar__link" href="">Security</a>
-              <a class="footer-navbar__link" href="">Pricing</a>
-              <a class="footer-navbar__link" href="">Automations</a>
+        <div class="footer-container__navbar footer-navbar">
+          <div class="footer-navbar__item footer-nav">
+            <h3 class="footer-nav__title">Product</h3>
+            <div class="footer-nav__list">
+              <a class="footer-nav__link" href="">For developers</a>
+              <a class="footer-nav__link" href="">For managers</a>
+              <a class="footer-nav__link" href="">For translators</a>
+              <a class="footer-nav__link" href="">For designers</a>
+              <a class="footer-nav__link" href="">Integrations</a>
+              <a class="footer-nav__link" href="">Security</a>
+              <a class="footer-nav__link" href="">Pricing</a>
+              <a class="footer-nav__link" href="">Automations</a>
             </div>
           </div>
 
-          <div class="footer-navbar__item">
-            <h3 class="footer-navbar__title">Support</h3>
-            <div class="footer-navbar__list">
-              <a class="footer-navbar__link" href="">Contact</a>
-              <a class="footer-navbar__link" href="">Documentation</a>
-              <a class="footer-navbar__link" href="">Status</a>
-              <a class="footer-navbar__link" href="">Product Updates</a>
-              <a class="footer-navbar__link" href="">CLI Tool</a>
-              <a class="footer-navbar__link" href="">API Reference</a>
-              <a class="footer-navbar__link" href="">iOS and Android SDK</a>
-              <a class="footer-navbar__link" href="">Supported File Formats</a>
+          <div class="footer-navbar__item footer-nav">
+            <h3 class="footer-nav__title">Support</h3>
+            <div class="footer-nav__list">
+              <a class="footer-nav__link" href="">Contact</a>
+              <a class="footer-nav__link" href="">Documentation</a>
+              <a class="footer-nav__link" href="">Status</a>
+              <a class="footer-nav__link" href="">Product Updates</a>
+              <a class="footer-nav__link" href="">CLI Tool</a>
+              <a class="footer-nav__link" href="">API Reference</a>
+              <a class="footer-nav__link" href="">iOS and Android SDK</a>
+              <a class="footer-nav__link" href="">Supported File Formats</a>
             </div>
           </div>
 
-          <div class="footer-navbar__item">
-            <h3 class="footer-navbar__title">Company</h3>
-            <div class="footer-navbar__list">
-              <a class="footer-navbar__link" href="">About</a>
-              <a class="footer-navbar__link" href="">Blog</a>
-              <a class="footer-navbar__link" href="">Careers | We`re Hiring</a>
-              <a class="footer-navbar__link" href="">Case Studies</a>
-              <a class="footer-navbar__link" href="">Media Kit</a>
+          <div class="footer-navbar__item footer-nav">
+            <h3 class="footer-nav__title">Company</h3>
+            <div class="footer-nav__list">
+              <a class="footer-nav__link" href="">About</a>
+              <a class="footer-nav__link" href="">Blog</a>
+              <a class="footer-nav__link" href="">Careers | We`re Hiring</a>
+              <a class="footer-nav__link" href="">Case Studies</a>
+              <a class="footer-nav__link" href="">Media Kit</a>
             </div>
           </div>
 
-          <div class="footer-navbar__item">
-            <h3 class="footer-navbar__title">Legal</h3>
-            <div class="footer-navbar__list">
-              <a class="footer-navbar__link" href="">Terms of Service</a>
-              <a class="footer-navbar__link" href="">Privacy Policy</a>
-              <a class="footer-navbar__link" href="">Cookie Policy</a>
-              <a class="footer-navbar__link" href="">Privacy Shield</a>
-              <a class="footer-navbar__link" href="">DPA</a>
-              <a class="footer-navbar__link" href="">List of Sub-processors</a>
-              <a class="footer-navbar__link" href="">Candidates Privacy Notice</a>
+          <div class="footer-navbar__item footer-nav">
+            <h3 class="footer-nav__title">Legal</h3>
+            <div class="footer-nav__list">
+              <a class="footer-nav__link" href="">Terms of Service</a>
+              <a class="footer-nav__link" href="">Privacy Policy</a>
+              <a class="footer-nav__link" href="">Cookie Policy</a>
+              <a class="footer-nav__link" href="">Privacy Shield</a>
+              <a class="footer-nav__link" href="">DPA</a>
+              <a class="footer-nav__link" href="">List of Sub-processors</a>
+              <a class="footer-nav__link" href="">Candidates Privacy Notice</a>
             </div>
           </div>
         </div>
       </div>
     </div>
-    
-    <div class="footer-rights">
+
+    <div class="rights">
       <div class="container">
-        <div class="footer-rights-container">
-          <div class="footer-rights-info">
+        
+        <div class="rights-container">
+         
+          <div class="rights-container__info rights-info">
             <div><img src="assets/images/logo-bottom.svg" alt=""></div>
-            <p class="footer-rights__description">Localization workflow for your web and mobile apps, games and digital
+            <p class="rights-info__description">Localization workflow for your web and mobile apps, games and digital
               content.</p>
           </div>
-          <div class="footer-rights-copyright">
-            <p class="footer-rights__description">©2001-2020</p>
-            <p class="footer-rights__description">All rights reserved.</p>
+          <div class="rights-container__copyright copyright-info">
+            <p class="copyright-info__description">©2001-2020</p>
+            <p class="copyright-info__description">All rights reserved.</p>
           </div>
         </div>
       </div>

@@ -7,13 +7,25 @@
   flex-direction: column;
   text-align: center;
   font-size: 18px;
+  justify-content: center;
+  align-items: center;
+
+  @include sm {
+    gap: 10px;
+    font-size: 14px;
+  }
 
 &__title {
 margin: 0;
+
+@include sm {
+  font-size: 16px;
+}
 }
 
 &__description {
   margin: 0;
+  margin-bottom: 40px;
 }
 
   &__picture {

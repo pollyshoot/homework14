@@ -5,6 +5,13 @@
 background-color: $color-bg-light;
 padding: 120px 0;
 
+@include md-xs {
+  padding: 80px 0;
+}
+
+@include xs {
+  padding: 60px 0 40px;
+}
 &__title {
   margin: 0 0 80px;
 }
@@ -20,6 +27,7 @@ display: grid;
   gap: 110px;
 }
 
+
 @include xl {
   gap: $gap * 2;
 }
@@ -31,5 +39,7 @@ display: grid;
 @include lg-sm {
   grid-template-columns: repeat(2, 1fr);
 }
+
+
 }
 }
